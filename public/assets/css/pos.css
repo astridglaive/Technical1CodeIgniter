@@ -1,0 +1,235 @@
+/* Basic page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f3f5fa;
+    color: #2d3345;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* Header and navigation */
+header {
+    background-color: #17213f;
+    color: white;
+    padding: 17px 0;
+    border-bottom: 4px solid #d6ad52;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo-icon {
+    color: #f1ca70;
+    font-size: 27px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: #f1ca70;
+    border-bottom: 2px solid #f1ca70;
+}
+
+/* Main content */
+main {
+    min-height: 75vh;
+    padding: 35px 0;
+}
+
+h1,
+h2,
+h3 {
+    color: #25365f;
+}
+
+.welcome {
+    margin-bottom: 30px;
+    padding: 55px 30px;
+    background-color: #25365f;
+    border: 1px solid #d6ad52;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.welcome h1 {
+    margin-top: 0;
+    font-size: 36px;
+    color: white;
+}
+
+.welcome-label,
+.page-label {
+    margin: 0 0 5px;
+    color: #c3953b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #d6ad52;
+    color: #17213f;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #edcc82;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card,
+.page-box {
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #d9dce5;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(23, 33, 63, 0.08);
+}
+
+.card {
+    border-top: 4px solid #d6ad52;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+.card-icon {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #e8ebf4;
+    color: #25365f;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card a {
+    color: #8c671d;
+    font-weight: bold;
+}
+
+.page-box h1 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Account tables */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #25365f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f3f8;
+}
+
+tbody tr:hover {
+    background-color: #fff8e7;
+}
+
+/* Footer */
+footer {
+    padding: 15px 0;
+    background-color: #17213f;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.disclaimer {
+    margin-top: 3px;
+    color: #aeb5c9;
+    font-size: 12px;
+}
+
+/* Small screens */
+@media (max-width: 700px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+}

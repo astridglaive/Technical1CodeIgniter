@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 <section class="page-box">
     <p class="page-label">Interstellar Directory</p>
-    <h1>Passenger Accounts</h1>
+    <h1>Customer Accounts</h1>
     <p>The character records below come from a static PHP array in the Customers controller.</p>
 
     <div class="table-container">
@@ -13,7 +13,7 @@
                     <th>#</th>
                     <th>Full Name</th>
                     <th>Email</th>
-                    <th>Contact Code</th>
+                    <th>Phone</th>
                 </tr>
             </thead>
             <tbody>

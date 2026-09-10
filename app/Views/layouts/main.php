@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= esc($title) ?> | Astral Express POS</title>
-    <link rel="stylesheet" href="<?= base_url('public/assets/css/pos.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/pos.css') ?>?v=2">
 </head>
 <body>
     <header>
@@ -17,8 +17,8 @@
             <nav>
                 <a class="<?= $activePage === 'home' ? 'active' : '' ?>" href="<?= base_url('/') ?>">Home</a>
                 <a class="<?= $activePage === 'about' ? 'active' : '' ?>" href="<?= base_url('about') ?>">About</a>
-                <a class="<?= $activePage === 'customers' ? 'active' : '' ?>" href="<?= base_url('customers') ?>">Passengers</a>
-                <a class="<?= $activePage === 'users' ? 'active' : '' ?>" href="<?= base_url('users') ?>">Crew</a>
+                <a class="<?= $activePage === 'customers' ? 'active' : '' ?>" href="<?= base_url('customers') ?>">Customers</a>
+                <a class="<?= $activePage === 'users' ? 'active' : '' ?>" href="<?= base_url('users') ?>">Users</a>
             </nav>
         </div>
     </header>

@@ -5,16 +5,19 @@
 
 body {
     margin: 0;
+    min-height: 100vh;
     background-color: #f3f5fa;
     color: #2d3345;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     width: 90%;
     max-width: 1050px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* Header and navigation */
@@ -61,7 +64,7 @@ nav a.active {
 
 /* Main content */
 main {
-    min-height: 75vh;
+    flex: 1;
     padding: 35px 0;
 }
 
@@ -195,6 +198,7 @@ tbody tr:hover {
 
 /* Footer */
 footer {
+    margin-top: auto;
     padding: 15px 0;
     background-color: #17213f;
     color: white;

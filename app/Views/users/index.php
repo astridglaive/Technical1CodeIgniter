@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 <section class="page-box">
     <p class="page-label">Authorized Personnel</p>
-    <h1>Astral Express Crew</h1>
+    <h1>User Accounts</h1>
     <p>The character records below come from a static PHP array in the Users controller.</p>
 
     <div class="table-container">

@@ -15,7 +15,7 @@ Local URL: `http://localhost/Codeigniter/Technical1CodeIgniter/`
 
 ## 1. CodeIgniter installation
 
-The project uses the complete CodeIgniter 4.5.5 framework supplied in `demonstration_ci4.zip`. It already contains the `app`, `public`, `system`, `tests`, and `writable` folders and a `composer.json` file.
+The project uses the complete CodeIgniter 4.5.5 framework supplied in `demonstration_ci4.zip` by my professor. It already contains the `app`, `public`, `system`, `tests`, and `writable` folders and a `composer.json` file.
 
 The normal Composer command for a new CodeIgniter app is:
 
